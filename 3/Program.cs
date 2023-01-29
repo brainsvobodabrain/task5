@@ -21,7 +21,7 @@ string print_array(int[] array){
 
 int minus_max_min_elements(int[] arr){
     int max=arr[0];
-    int min=arr[0]
+    int min=arr[0];
 
     for (int i=0; i<arr.Length; i++){
         if (max<arr[i]){
@@ -33,5 +33,5 @@ int minus_max_min_elements(int[] arr){
     }
     return max-min;
 }
-int[] array=create_random_array(4);
+int[] array=create_random_array(10);
 System.Console.WriteLine($"{print_array(array)} -> {minus_max_min_elements(array)}");
